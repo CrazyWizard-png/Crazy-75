@@ -39,3 +39,63 @@ Created the GitHub repository for the project and set it up as an Obsidian vault
 
 ---
 
+
+## 26 August 2026 - Specification and Layout
+**Time spent: ~1 hour**
+
+### What I did
+
+Today I finalized the main specifications for the keyboard and created the first version of the physical layout.
+
+I also cleaned up the GitHub repository by adding `.obsidian/` to `.gitignore`. This keeps my local Obsidian configuration out of the public repository while still allowing me to use Obsidian to write the project documentation.
+
+### Finalized specifications
+
+- Approximately 75% layout
+    
+- ANSI physical layout
+    
+- US QWERTY
+    
+- Dedicated F1–F12 keys
+    
+- Dedicated arrow keys
+    
+- Dedicated `Delete`, `Home` and `End`
+    
+- One programmable `M1` key
+    
+- Rotary encoder for volume control and mute
+    
+- MX 5-pin switch support
+    
+- Hot-swappable switches
+    
+- Per-key RGB using `SK6812 MINI-E` LEDs
+    
+- 3D-printed case
+    
+- Internal dampening
+
+### Keyboard layout
+
+I designed the physical layout using Keyboard Layout Editor. I used a conventional 75% keyboard as a starting point but removed keys I don't expect to use, such as `Page Up` and `Page Down`.
+
+I kept `Home` and `End` because I expect them to be useful for navigating text and code. The remaining position in the navigation column became an `M1` key whose function will be decided later.
+
+The rotary encoder is located in the top-right corner and is currently planned to control volume, with pressing the encoder muting/unmuting the computer.
+
+**Final layout:**
+
+![keyboard-layout](images/keyboard-layout.png)
+
+The editable Keyboard Layout Editor data is stored at:
+
+`Layout/keyboard-layout.json`
+
+### Next step
+
+- Begin work in KiCad
+
+---
+
