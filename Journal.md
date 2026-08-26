@@ -85,6 +85,8 @@ I kept `Home` and `End` because I expect them to be useful for navigating text a
 
 The rotary encoder is located in the top-right corner and is currently planned to control volume, with pressing the encoder muting/unmuting the computer.
 
+This keyboard layout contains 80 MX style switches + the rotary encoder. 
+
 **Final layout:**
 
 ![keyboard-layout](images/keyboard-layout.png)
@@ -93,8 +95,34 @@ The editable Keyboard Layout Editor data is stored at:
 
 `Layout/keyboard-layout.json`
 
-### Next step
+### Next steps
 
+- Finish the BOM
+- Begin work in KiCad
+
+
+
+
+### Initial BOM and component sourcing
+
+**Time spent: ~1 hour**
+
+Continued completing the BOM.
+
+I found candidates for:
+- Stabilizers
+- 1N4148 through-hole diodes
+- SK6812 MINI-E RGB LEDs
+- EC11 rotary encoder
+- RP2040 Raspberry Pi Pico-compatible controller
+
+I compared several RP2040 boards And ultimately landed on one with the same dimensions and pinout as a classic RP2040 Pi pico to avoid complications in the future. 
+
+I recorded quantities, prices before checkout and purchase links in the BOM.
+
+The remaining major parts to source include switches and keycaps as well as the dampening material, but these can wait while I design the PCB.
+
+### Next step
 - Begin work in KiCad
 
 ---
