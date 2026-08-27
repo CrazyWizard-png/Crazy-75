@@ -1,4 +1,53 @@
 
+## 27 August 2026 — Starting the PCB Schematic
+
+**Time spent: ~1h 10min**
+
+### Starting the schematic
+
+Today I started designing the keyboard PCB in KiCad.
+
+I began by adding the first rows of keyboard switches, their 1N4148 diodes, and the EC11 rotary encoder to the schematic.
+
+Initially, I arranged the switches roughly according to their physical positions based on my design from yesterday. This made sense to me at first because it made the schematic resemble the actual keyboard layout.
+
+**Initial schematic layout:**
+
+![Initial schematic layout](images/Initial-schematic-layout.png)
+
+After looking more closely at the KEEB guide, I realized that the schematic does not need to represent the physical position of the components. Its purpose is to clearly describe how the components are electrically connected.
+
+I therefore reorganized the switches into a grid representing the keyboard matrix. This makes the rows and columns much easier to see and should make connecting the matrix to the microcontroller easier later.
+
+### Keyboard matrix
+
+I currently have the 80 switches organized into **6 rows and 15 columns**, with one 1N4148 diode for every switch.
+
+I connected the switches into their respective rows and columns and kept unused matrix positions empty where the physical keyboard does not have a key.
+
+I also added the EC11 rotary encoder to the schematic. It will eventually be used for volume control, with the integrated push button planned for mute/unmute.
+
+**Current schematic:**
+
+![Keyboard matrix schematic1](Keyboard-matrix-schematic1.png)
+
+### Next steps
+
+- Check the matrix for incorrect or missing connections
+    
+- Add the Raspberry Pi Pico-compatible RP2040 controller
+    
+- Assign GPIO pins to the matrix rows and columns
+    
+- Connect the rotary encoder
+    
+- Add the SK6812 MINI-E RGB circuit
+    
+- Continue following the KEEB schematic design guide
+
+---
+
+
 ## 26 August 2026 - Specification and Layout
 **Time spent: ~1 hour**
 
