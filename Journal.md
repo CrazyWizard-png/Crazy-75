@@ -31,6 +31,8 @@ I also added the EC11 rotary encoder to the schematic. It will eventually be use
 
 ![Keyboard matrix schematic1](Keyboard-matrix-schematic1.png)
 
+
+Fun fact about me: I never listen to music while working because I find it distracting.
 ### Next steps
 
 - Check the matrix for incorrect or missing connections
